@@ -1,0 +1,27 @@
+$ifndef __STDIO_SHF_
+$define __STDIO_SHF_
+$use basicio.shf
+
+$define stdout 1
+$define stdin 2
+void popip(void){
+    asm{
+        ret
+    }
+}
+void putchar(char *chr){
+    asm{
+        pop rcx
+        mov rbx,1
+        mov rax,stdin
+        mov rdx,1
+        int 0x80
+    }
+}
+void puts(string *str){
+    asm{
+
+    }
+}
+
+$endif
