@@ -1,8 +1,14 @@
-#include"./headers/AST.h"
-#include"./headers/Tree.h"
-int main(int argc,char *argv[]){
-    BinaryTree<int> *test = new BinaryTree<int>;
-    test->setValue(1290);
-    printf("%d",test->getValue());
+#include<cstdio>
+#include<cstdlib>
+#include"headers/IO.h"
+int test(){
+    printf("\n----------------test-part-----------------\n");
+    Character_Stream stream = readline();
+    stream.print();
+    return 0;
+}
+
+int main(){
+    test();
     return 0;
 }
